@@ -1,5 +1,5 @@
 (deftheme steady
-  "Created 2013-03-06.")
+  "Created 2013-12-08.")
 
 ;; Set attributes of the default face for existing frames and new frames.
 (set-face-attribute 'default nil :background "#ffffff" :foreground "#272727")
