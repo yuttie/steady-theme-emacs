@@ -25,6 +25,8 @@
    `(linum ((t (:inherit (fringe)))))
    `(mode-line ((t (:background "gray80" :foreground "gray10" :box nil :weight bold))))
    `(mode-line-inactive ((t (:background "gray20" :foreground "gray50" :box nil))))
+   `(minibuffer-prompt ((t (:foreground ,black))))
+   ;; powerline
    `(powerline-mode-normal   ((t (:background "#afd700" :foreground "#005f00" :box nil :weight bold))))
    `(powerline-mode-insert   ((t (:background "white"   :foreground "#005f5f" :box nil :weight bold))))
    `(powerline-mode-visual   ((t (:background "#ffaf00" :foreground "#875f00" :box nil :weight bold))))
@@ -44,8 +46,6 @@
    `(powerline-buffer-id-normal   ((t (:inherit (powerline-second-normal)))))
    `(powerline-buffer-id-insert   ((t (:inherit (powerline-second-insert)))))
    `(powerline-buffer-id-inactive ((t (:inherit (powerline-second-inactive)))))
-
-   `(minibuffer-prompt ((t (:foreground ,black))))
    ;; Highlight
    `(highlight ((t (:background "gray75"))))
    `(isearch ((t (:background ,blue :foreground "black"))))
