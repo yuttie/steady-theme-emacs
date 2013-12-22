@@ -122,9 +122,8 @@
    `(elscreen-tab-background-face ((t (:background "gray80"))))
    `(elscreen-tab-control-face ((t (:background "white" :foreground "black" :underline "gray50"))))
    `(elscreen-tab-current-screen-face ((t (:background "white" :foreground "gray20"))))
-   `(elscreen-tab-other-screen-face ((t (:background "gray80" :foreground "gray40"))))))
-
-;; highlight-parentheses
-(setq hl-paren-colors '("#ff0000" "#bf4040" "#9f6060" "#8f7070" "#808080"))
+   `(elscreen-tab-other-screen-face ((t (:background "gray80" :foreground "gray40")))))
+  ;; highlight-parentheses
+  (setq hl-paren-colors '("#ff0000" "#bf4040" "#9f6060" "#8f7070" "#808080")))
 
 (provide-theme 'steady)
