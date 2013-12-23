@@ -1,13 +1,14 @@
+;;; -*- lexical-binding: t -*-
 (deftheme steady
   "Created 2013-12-08.")
 
-(lexical-let ((gray   "gray70")
-              (black  "#272727")
-              (red    "#c7243a")
-              (yellow "#d59b0a")
-              (green  "#839e19")
-              (blue   "#006ea5")
-              (purple "#744199"))
+(let ((gray   "gray70")
+      (black  "#272727")
+      (red    "#c7243a")
+      (yellow "#d59b0a")
+      (green  "#839e19")
+      (blue   "#006ea5")
+      (purple "#744199"))
   ;; Set attributes of the default face for existing frames and new frames.
   (set-face-attribute 'default nil :background "white" :foreground black)
   (set-face-attribute 'cursor  nil :background red)
