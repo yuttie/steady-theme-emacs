@@ -32,7 +32,7 @@
       (black  "#272727")
       (red    "#c7243a") (red-256 "#d70000")
       (yellow "#d59b0a")
-      (green  "#839e19")
+      (green  "#93B11D")
       (blue   "#006ea5")
       (purple "#744199") (purple-256 "#8700d7"))
   ;; Set attributes of the default face for existing frames and new frames.
