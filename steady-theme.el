@@ -1,4 +1,4 @@
-;;; steady-theme.el --- a steady theme for Emacs  -*- lexical-binding: t -*-
+;;; steady-theme.el --- A steady theme for Emacs  -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2013  Yuta Taniguchi
 
