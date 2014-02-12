@@ -78,9 +78,9 @@
    `(powerline-buffer-id-inactive ((t :inherit (powerline-second-inactive))))
    ;; Highlight
    `(highlight           ((t :background "gray75")))
-   `(isearch             ((t :background ,blue :foreground ,black)))
+   `(isearch             ((t :background "#f9db57" :foreground ,black)))
    `(query-replace       ((t :inherit (isearch))))
-   `(lazy-highlight      ((t :background "#ffaa33" :foreground ,black)))
+   `(lazy-highlight      ((t :background nil :inherit (isearch))))
    `(region              ((default :foreground unspecified)
                           (((class color) (min-colors 257)) :background "#fbe9e2")
                           (t                                :background "#ffdfdf")))
