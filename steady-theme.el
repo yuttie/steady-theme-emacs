@@ -38,8 +38,8 @@
       (fg-purple "#744199") (fg-purple-256 "#8700d7")
       (bg-yellow "#f9db57"))
   ;; Set attributes of the default face for existing frames and new frames.
-  (set-face-attribute 'default nil :background white :foreground black)
-  (set-face-attribute 'cursor  nil :background red)
+  (set-face-attribute 'default nil :background white :foreground fg-black)
+  (set-face-attribute 'cursor  nil :background fg-red)
   ;; Custom theme
   (custom-theme-set-faces
    'steady
