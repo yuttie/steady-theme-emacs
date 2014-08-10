@@ -28,9 +28,9 @@
 (deftheme steady
   "A steady theme for Emacs")
 
-(let ((white  "#ffffff")
-      (gray   "gray70")
-      (fg-black  "#272727")
+(let ((bg  "#ffffff")
+      (fg  "#272727")
+      (shadow "gray70")
       (fg-red    "#c7243a") (fg-red-256 "#d70000")
       (fg-yellow "#d59b0a")
       (fg-green  "#93B11D")
@@ -38,37 +38,38 @@
       (fg-purple "#744199") (fg-purple-256 "#8700d7")
       (bg-yellow "#f9db57"))
   ;; Set attributes of the default face for existing frames and new frames.
-  (set-face-attribute 'default nil :background white :foreground fg-black)
+  (set-face-attribute 'default nil :background bg :foreground fg)
   (set-face-attribute 'cursor  nil :background fg-red)
   ;; Custom theme
   (custom-theme-set-faces
    'steady
    ;; Standard
-   `(default        ((t :background "#ffffff" :foreground ,fg-black)))
+   `(default        ((t :background ,bg :foreground ,fg)))
    `(fixed-pitch    ((t :family "monospace")))
    `(variable-pitch ((t :family "sans serif")))
+   `(shadow         ((t :foreground ,shadow)))
    ;; Frame
    `(cursor             ((((class color) (min-colors 257)) :background ,fg-red)
                          (t                                :background ,fg-red-256)))
    `(fringe             ((((class color) (min-colors 257)) :background "#e3e0c9" :foreground "#737266")
                          (t                                :background "#dfdfaf" :foreground "#87875f")))
-   `(menu               ((t :background "gray50"  :foreground ,white :inverse-video nil)))
+   `(menu               ((t :background "gray50"  :foreground "#ffffff" :inverse-video nil)))
    `(linum              ((t :inherit (fringe))))
    `(mode-line          ((t :background "gray80"  :foreground "gray10" :box nil :weight bold)))
    `(mode-line-inactive ((t :background "gray20"  :foreground "gray50" :box nil)))
-   `(minibuffer-prompt  ((t :foreground ,fg-black)))
+   `(minibuffer-prompt  ((t :foreground ,fg)))
    ;; powerline
    `(powerline-mode-normal        ((t :background "#afd700" :foreground "#005f00" :box nil :weight bold)))
-   `(powerline-mode-insert        ((t :background ,white    :foreground "#005f5f" :box nil :weight bold)))
+   `(powerline-mode-insert        ((t :background "#ffffff" :foreground "#005f5f" :box nil :weight bold)))
    `(powerline-mode-visual        ((t :background "#ffaf00" :foreground "#875f00" :box nil :weight bold)))
-   `(powerline-mode-replace       ((t :background "#d70000" :foreground ,white    :box nil :weight bold)))
-   `(powerline-mode-operator      ((t :background "#d70000" :foreground ,white    :box nil :weight bold)))
-   `(powerline-mode-emacs         ((t :background "gray60"  :foreground ,fg-black :box nil :weight bold)))
+   `(powerline-mode-replace       ((t :background "#d70000" :foreground "#ffffff" :box nil :weight bold)))
+   `(powerline-mode-operator      ((t :background "#d70000" :foreground "#ffffff" :box nil :weight bold)))
+   `(powerline-mode-emacs         ((t :background "gray60"  :foreground "black"   :box nil :weight bold)))
    `(powerline-mode-inactive      ((t :background "gray60"  :foreground "gray30"  :box nil)))
    `(powerline-first-normal       ((t :background "gray80"  :foreground "gray30")))
    `(powerline-first-insert       ((t :background "#87d7ff" :foreground "#005f87")))
    `(powerline-first-inactive     ((t :background "gray60"  :foreground "gray30")))
-   `(powerline-second-normal      ((t :background "gray60"  :foreground ,white)))
+   `(powerline-second-normal      ((t :background "gray60"  :foreground "#ffffff")))
    `(powerline-second-insert      ((t :background "#0087af" :foreground "#87d7ff")))
    `(powerline-second-inactive    ((t :background "gray40"  :foreground "gray70")))
    `(powerline-third-normal       ((t :background "gray40"  :foreground "gray70")))
@@ -79,7 +80,7 @@
    `(powerline-buffer-id-inactive ((t :inherit (powerline-second-inactive))))
    ;; Highlight
    `(highlight           ((t :background "gray75")))
-   `(isearch             ((t :background ,bg-yellow :foreground ,fg-black :box (:line-width 1 :color ,fg-yellow :style nil))))
+   `(isearch             ((t :background ,bg-yellow :foreground ,fg :box (:line-width 1 :color ,fg-yellow :style nil))))
    `(query-replace       ((t :inherit (isearch))))
    `(lazy-highlight      ((t :background nil :inherit (isearch))))
    `(region              ((default :foreground unspecified)
@@ -89,15 +90,15 @@
    `(trailing-whitespace ((((class color)) :background "#ff0000") (t :inverse-video t)))
    `(escape-glyph        ((t :foreground "#5599ff")))
    ;; whitespace
-   `(whitespace-line ((t :background "#ffff00" :foreground ,fg-black)))
+   `(whitespace-line ((t :background "#ffff00" :foreground ,fg)))
    ;; Main
    `(font-lock-builtin-face              ((((class color) (min-colors 257)) :foreground ,fg-red)
                                           (t                                :foreground ,fg-red-256)))
    `(font-lock-comment-delimiter-face    ((t :inherit (font-lock-comment-face))))
-   `(font-lock-comment-face              ((t :foreground ,gray)))
+   `(font-lock-comment-face              ((t :foreground unspecified :inherit (shadow))))
    `(font-lock-constant-face             ((((class color) (min-colors 257)) :foreground ,fg-purple)
                                           (t                                :foreground ,fg-purple-256)))
-   `(font-lock-doc-face                  ((t :foreground ,gray     :slant italic)))
+   `(font-lock-doc-face                  ((t :slant italic :inherit (shadow))))
    `(font-lock-function-name-face        ((t :foreground ,fg-green :slant italic)))
    `(font-lock-keyword-face              ((((class color) (min-colors 257)) :foreground ,fg-red)
                                           (t                                :foreground ,fg-red-256)))
@@ -110,14 +111,14 @@
                                           (t                                :foreground ,fg-purple-256)))
    `(font-lock-type-face                 ((t :foreground ,fg-blue)))
    `(font-lock-variable-name-face        ((t :foreground ,fg-yellow)))
-   `(font-lock-warning-face              ((t :background "#ffff00" :foreground ,fg-black)))
+   `(font-lock-warning-face              ((t :background "#ffff00" :foreground ,fg)))
    ;; completions
    `(completions-common-part      ((t :foreground "gray50")))
    `(completions-first-difference ((t :foreground ,fg-red)))
    ;; show-paren-mode
    `(show-paren-match-face ((t :background nil :foreground "#ff0000")))
    ;; auto-complete
-   `(ac-completion-face ((t :foreground ,gray     :underline nil)))
+   `(ac-completion-face ((t :underline unspecified :inherit (shadow))))
    `(ac-candidate-face  ((t :background "gray90"  :foreground "gray20")))
    `(ac-selection-face  ((t :background "#cbe6f3" :foreground "#007ab7" :weight bold)))
    ;; diff-mode
@@ -130,7 +131,7 @@
    `(diff-removed        ((t :background "#f6d4d8")))
    `(diff-added          ((t :background "#eef5d3")))
    `(diff-changed        ((t)))
-   `(diff-function       ((t :foreground "#e06800" :background ,white :inherit (diff-header))))
+   `(diff-function       ((t :foreground "#e06800" :background ,bg :inherit (diff-header))))
    `(diff-context        ((t :foreground "gray50")))
    `(diff-nonexistent    ((t :inherit (diff-file-header))))
    `(diff-refine-removed ((t :background "#DA6272")))
@@ -154,15 +155,15 @@
    `(ediff-fine-diff-B    ((t :background "#C0D860" :foreground nil)))
    `(ediff-fine-diff-C    ((t :background "#cbe6f3" :foreground nil)))
    ;; Helm
-   `(helm-source-header    ((t :background "gray90"    :foreground ,fg-black :height 1.0)))
-   `(helm-header           ((t :background "gray80"    :foreground ,fg-black)))
+   `(helm-source-header    ((t :background "gray90"    :foreground ,fg :height 1.0)))
+   `(helm-header           ((t :background "gray80"    :foreground ,fg)))
    `(helm-candidate-number ((t :background unspecified :foreground "gray50")))
    `(helm-selection        ((t :background "#cbe6f3"   :foreground "#007ab7" :weight bold :underline nil)))
    ;; ElScreen
    `(elscreen-tab-background-face     ((t :background "gray80")))
-   `(elscreen-tab-control-face        ((t :background ,white   :foreground ,fg-black :underline "gray50")))
-   `(elscreen-tab-current-screen-face ((t :background ,white   :foreground "gray20")))
-   `(elscreen-tab-other-screen-face   ((t :background "gray80" :foreground "gray40"))))
+   `(elscreen-tab-control-face        ((t :background "#ffffff" :foreground ,fg :underline "gray50")))
+   `(elscreen-tab-current-screen-face ((t :background "#ffffff" :foreground "gray20")))
+   `(elscreen-tab-other-screen-face   ((t :background "gray80"  :foreground "gray40"))))
   ;; highlight-parentheses
   (setq hl-paren-colors '("#ff0000" "#bf4040" "#9f6060" "#8f7070" "#808080")))
 
