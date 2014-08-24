@@ -31,11 +31,11 @@
 (let ((bg  "#ffffff")  ; (bg  "#333333")
       (fg  "#272727")  ; (fg  "#d0d0d0")
       (shadow    "gray70")  ; (shadow "gray40")
-      (fg-red    "#c74949") (fg-red-256 "")     (bg-red    "#f67171") (fg-red-256 "")
+      (fg-red    "#c74949") (fg-red-256 "")     (bg-red    "#f67171") (bg-red-256 "")
       (fg-yellow "#e2a206")                     (bg-yellow "#f5de60")
       (fg-green  "#89a718")                     (bg-green  "#d7f55f")
       (fg-blue   "#007fbf")                     (bg-blue   "#5fbff5")
-      (fg-purple "#8749c7") (fg-purple-256 "")  (bg-purple "#b673f6") (fg-purple-256 "")
+      (fg-purple "#8749c7") (fg-purple-256 "")  (bg-purple "#b673f6") (bg-purple-256 "")
       (diff-removed "#f6d4d8")
       (diff-added   "#eef5d3"))
   ;; Set attributes of the default face for existing frames and new frames.
