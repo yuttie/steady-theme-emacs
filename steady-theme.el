@@ -91,7 +91,7 @@
    `(trailing-whitespace ((((class color)) :background "#ff0000") (t :inverse-video t)))
    `(escape-glyph        ((t :foreground "#5599ff")))
    ;; whitespace
-   `(whitespace-line ((t :background "#ffff00" :foreground ,fg)))
+   `(whitespace-line ((t :background "#ffff00" :foreground "black")))
    ;; Main
    `(font-lock-builtin-face              ((((class color) (min-colors 257)) :foreground ,fg-red)
                                           (t                                :foreground ,fg-red-256)))
