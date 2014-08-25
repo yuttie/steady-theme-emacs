@@ -28,7 +28,7 @@
 (deftheme steady-dark
   "A steady dark theme for Emacs")
 
-(let ((bg  "#333333")
+(let ((bg  "#272727")
       (fg  "#d0d0d0")
       (shadow    "gray40")
       (fg-red    "#c74949") (fg-red-256    "#d70000")  (bg-red    "#f67171") (bg-red-256    "#ff5f5f")
