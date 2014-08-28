@@ -81,7 +81,7 @@
    `(powerline-buffer-id-inactive ((t :inherit (powerline-second-inactive))))
    ;; Highlight
    `(highlight           ((t :background "gray10")))
-   `(isearch             ((t :background ,bg-yellow :foreground "black" :box (:line-width 1 :color ,fg-yellow :style nil))))
+   `(isearch             ((t :background ,bg-yellow :foreground "black" :box (:line-width -1 :color ,fg-yellow :style nil))))
    `(query-replace       ((t :inherit (isearch))))
    `(lazy-highlight      ((t :background nil :inherit (isearch))))
    `(region              ((default :foreground unspecified)
