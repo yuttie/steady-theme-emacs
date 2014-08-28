@@ -160,6 +160,7 @@
    `(helm-header           ((t :background "gray40"    :foreground ,fg)))
    `(helm-candidate-number ((t :background unspecified :foreground "gray50")))
    `(helm-selection        ((t :background "#133f55"   :foreground "#41c0ff" :weight bold :underline nil)))
+   `(helm-match            ((t :foreground ,fg-yellow :weight bold)))
    ;; ElScreen
    `(elscreen-tab-background-face     ((t :background "gray80")))
    `(elscreen-tab-control-face        ((t :background "#ffffff" :foreground ,fg :underline "gray50")))
