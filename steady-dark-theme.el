@@ -165,7 +165,11 @@
    `(elscreen-tab-background-face     ((t :background "gray80")))
    `(elscreen-tab-control-face        ((t :background "#ffffff" :foreground ,fg :underline "gray50")))
    `(elscreen-tab-current-screen-face ((t :background "#ffffff" :foreground "gray20")))
-   `(elscreen-tab-other-screen-face   ((t :background "gray80"  :foreground "gray40"))))
+   `(elscreen-tab-other-screen-face   ((t :background "gray80"  :foreground "gray40")))
+   ;; Shell
+   `(comint-highlight-prompt ((t :foreground ,bg-red   :weight bold)))
+   `(comint-highlight-input  ((t :foreground "#ffffff" :weight bold)))
+   )
   ;; highlight-parentheses
   (setq hl-paren-colors '("#ff0000" "#bf4040" "#9f6060" "#8f7070" "#808080")))
 
