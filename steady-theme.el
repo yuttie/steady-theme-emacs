@@ -170,4 +170,8 @@
 
 (provide-theme 'steady)
 
+;; Local Variables:
+;; eval: (add-to-list 'custom-theme-load-path (file-name-directory (buffer-file-name)))
+;; End:
+
 ;;; steady-theme.el ends here

@@ -171,4 +171,8 @@
 
 (provide-theme 'steady-dark)
 
+;; Local Variables:
+;; eval: (add-to-list 'custom-theme-load-path (file-name-directory (buffer-file-name)))
+;; End:
+
 ;;; steady-dark-theme.el ends here
