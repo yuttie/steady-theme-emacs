@@ -112,7 +112,7 @@
                                           (t                                :foreground ,fg-purple-256)))
    `(font-lock-type-face                 ((t :foreground ,fg-blue)))
    `(font-lock-variable-name-face        ((t :foreground ,fg-yellow)))
-   `(font-lock-warning-face              ((t :background "#ffff00" :foreground ,fg)))
+   `(font-lock-warning-face              ((t :background "#ffff00" :foreground "#000000")))
    ;; completions
    `(completions-common-part      ((t :foreground "gray50")))
    `(completions-first-difference ((t :foreground ,fg-red)))
