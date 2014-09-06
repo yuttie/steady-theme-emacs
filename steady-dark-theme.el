@@ -139,7 +139,7 @@
    `(diff-refine-added   ((t :background "#62751a")))
    `(diff-refine-change  ((t :inherit (diff-refine-added))))
    ;; Magit
-   `(magit-item-highlight ((t :weight bold :inherit (highlight))))
+   `(magit-item-highlight ((t :inherit (highlight))))
    ;; Minimap
    `(minimap-active-region-background ((t :background "gray30")))
    ;; Ediff
