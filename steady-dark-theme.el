@@ -162,10 +162,11 @@
    `(helm-selection        ((t :background "#133f55"   :foreground "#41c0ff" :weight bold :underline nil)))
    `(helm-match            ((t :foreground ,fg-yellow :weight bold)))
    ;; ElScreen
-   `(elscreen-tab-background-face     ((t :background "gray80")))
+   `(elscreen-tab-background-face     ((((class color) (min-colors 257)) :background "#404040" :foreground "#686868")
+                                       (t                                :background "#444444" :foreground "#6c6c6c")))
    `(elscreen-tab-control-face        ((t :background "#ffffff" :foreground ,fg :underline "gray50")))
-   `(elscreen-tab-current-screen-face ((t :background "#ffffff" :foreground "gray20")))
-   `(elscreen-tab-other-screen-face   ((t :background "gray80"  :foreground "gray40")))
+   `(elscreen-tab-current-screen-face ((t :background "#41c0ff" :foreground "#133f55")))
+   `(elscreen-tab-other-screen-face   ((t :background "gray50"  :foreground "#272727")))
    ;; Shell
    `(comint-highlight-prompt ((t :foreground ,bg-red   :weight bold)))
    `(comint-highlight-input  ((t :foreground "#ffffff" :weight bold)))
