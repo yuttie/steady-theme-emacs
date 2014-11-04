@@ -59,6 +59,8 @@
    `(mode-line          ((t :background "gray80"  :foreground "gray10" :box nil :weight bold)))
    `(mode-line-inactive ((t :background "gray20"  :foreground "gray50" :box nil)))
    `(minibuffer-prompt  ((t :foreground ,fg)))
+   ;; hlinum
+   `(linum-highlight-face ((t :inherit (linum) :foreground "#41c0ff")))
    ;; powerline
    `(powerline-mode-normal        ((t :background "#afd700" :foreground "#005f00" :box nil :weight bold)))
    `(powerline-mode-insert        ((t :background "#ffffff" :foreground "#005f5f" :box nil :weight bold)))
