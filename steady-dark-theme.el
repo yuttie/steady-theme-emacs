@@ -50,8 +50,8 @@
    `(variable-pitch ((t :family "sans serif")))
    `(shadow         ((t :foreground ,shadow)))
    ;; Frame
-   `(cursor             ((((class color) (min-colors 257)) :background ,fg-red)
-                         (t                                :background ,fg-red-256)))
+   `(cursor             ((((class color) (min-colors 257)) :background ,bg-blue)
+                         (t                                :background ,bg-blue-256)))
    `(fringe             ((((class color) (min-colors 257)) :background "#404040" :foreground "#686868" :weight bold)
                          (t                                :background "#444444" :foreground "#6c6c6c" :weight bold)))
    `(menu               ((t :background "gray50"  :foreground "#ffffff" :inverse-video nil)))
