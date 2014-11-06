@@ -40,7 +40,7 @@
       (diff-added   "#434d13"))
   ;; Set attributes of the default face for existing frames and new frames.
   (set-face-attribute 'default nil :background bg :foreground fg)
-  (set-face-attribute 'cursor  nil :background fg-red)
+  (set-face-attribute 'cursor  nil :background fg-blue)
   ;; Custom theme
   (custom-theme-set-faces
    'steady-dark
