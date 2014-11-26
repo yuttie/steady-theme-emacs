@@ -171,6 +171,11 @@
    ;; Shell
    `(comint-highlight-prompt ((t :foreground ,bg-red   :weight bold)))
    `(comint-highlight-input  ((t :foreground "#ffffff" :weight bold)))
+   ;; DDSKK
+   `(skk-dcomp-face ((t :inherit (shadow))))
+   `(skk-dcomp-multiple-face  ((t :inherit(default) :background "gray25")))
+   `(skk-dcomp-multiple-trailing-face  ((t :inherit (skk-dcomp-multiple-face) :foreground "#ffffff" :weight bold)))
+   `(skk-dcomp-multiple-selected-face ((t :inherit (skk-dcomp-multiple-face) :foreground "#41c0ff" :weight bold)))
    )
   ;; highlight-parentheses
   (setq hl-paren-colors '("#ff0000" "#bf4040" "#9f6060" "#8f7070" "#808080")))
