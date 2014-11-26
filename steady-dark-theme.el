@@ -120,9 +120,9 @@
    ;; show-paren-mode
    `(show-paren-match-face ((t :background nil :foreground "#ff0000")))
    ;; auto-complete
-   `(ac-completion-face ((t :underline unspecified :inherit (shadow))))
-   `(ac-candidate-face  ((t :background "gray90"  :foreground "gray20")))
-   `(ac-selection-face  ((t :background "#cbe6f3" :foreground "#007ab7" :weight bold)))
+   `(ac-completion-face ((t :inherit (shadow) :underline unspecified)))
+   `(ac-candidate-face  ((t :inherit(default) :background "gray25")))
+   `(ac-selection-face  ((t :inherit (ac-candidate-face) :foreground "#41c0ff" :weight bold)))
    ;; diff-mode
    `(diff-header         ((t :background "gray25" :foreground ,fg-blue)))
    `(diff-file-header    ((t :background "gray30" :weight bold :inherit (diff-header))))
