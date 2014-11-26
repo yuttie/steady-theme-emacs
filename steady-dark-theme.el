@@ -172,6 +172,10 @@
    `(comint-highlight-prompt ((t :foreground ,bg-red   :weight bold)))
    `(comint-highlight-input  ((t :foreground "#ffffff" :weight bold)))
    ;; DDSKK
+   `(skk-henkan-face ((t :inherit (default) :foreground "#41c0ff")))
+   `(skk-jisyo-registration-badge-face ((t :background "#41c0ff" :foreground "#133f55")))
+   `(skk-inline-show-face ((t :inherit (default))))
+   `(skk-verbose-intention-face ((t :inherit (shadow))))
    `(skk-dcomp-face ((t :inherit (shadow))))
    `(skk-dcomp-multiple-face  ((t :inherit(default) :background "gray25")))
    `(skk-dcomp-multiple-trailing-face  ((t :inherit (skk-dcomp-multiple-face) :foreground "#ffffff" :weight bold)))
@@ -179,6 +183,13 @@
    )
   ;; highlight-parentheses
   (setq hl-paren-colors '("#ff0000" "#bf4040" "#9f6060" "#8f7070" "#808080")))
+  ;; DDSKK
+  (defface skk-henkan-face nil "*変換候補の face 属性。")
+  (setq skk-henkan-face 'skk-henkan-face)
+  (defface skk-inline-show-face nil "")
+  (setq skk-inline-show-face 'skk-inline-show-face)
+  (setq skk-inline-show-background-color "gray25")
+  (setq skk-inline-show-background-color-odd "gray30")
 
 (provide-theme 'steady-dark)
 
