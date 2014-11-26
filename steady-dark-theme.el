@@ -56,8 +56,8 @@
                          (t                                :background "#444444" :foreground "#6c6c6c" :weight bold)))
    `(menu               ((t :background "gray50"  :foreground "#ffffff" :inverse-video nil)))
    `(linum              ((t :inherit (fringe))))
-   `(mode-line          ((t :background "gray80"  :foreground "gray10" :box nil :weight bold)))
-   `(mode-line-inactive ((t :background "gray20"  :foreground "gray50" :box nil)))
+   `(mode-line          ((t :background "gray45"  :foreground "gray90" :box nil)))
+   `(mode-line-inactive ((t :background "gray40"  :foreground "gray55" :box nil)))
    `(minibuffer-prompt  ((t :foreground ,fg)))
    ;; hlinum
    `(linum-highlight-face ((t :inherit (linum) :foreground "#41c0ff")))
