@@ -52,8 +52,8 @@
    ;; Frame
    `(cursor             ((((class color) (min-colors 257)) :background ,bg-blue)
                          (t                                :background ,bg-blue-256)))
-   `(fringe             ((((class color) (min-colors 257)) :background "#404040" :foreground "#686868" :weight bold)
-                         (t                                :background "#444444" :foreground "#6c6c6c" :weight bold)))
+   `(fringe             ((((class color) (min-colors 257)) :background "gray18" :foreground "gray40" :weight bold)
+                         (t                                :background "gray18" :foreground "gray40" :weight bold)))
    `(menu               ((t :background "gray50"  :foreground "#ffffff" :inverse-video nil)))
    `(linum              ((t :inherit (fringe))))
    `(mode-line          ((t :background "gray45"  :foreground "gray90" :box nil)))
@@ -163,11 +163,12 @@
    `(helm-selection        ((t :background "#133f55"   :foreground "#41c0ff" :weight bold :underline nil)))
    `(helm-match            ((t :foreground ,fg-yellow :weight bold)))
    ;; ElScreen
-   `(elscreen-tab-background-face     ((((class color) (min-colors 257)) :background "#404040" :foreground "#686868" :height 1.5)
-                                       (t                                :background "#444444" :foreground "#6c6c6c" :height 1.5)))
-   `(elscreen-tab-control-face        ((t :background "#ffffff" :foreground ,fg :underline "gray50")))
-   `(elscreen-tab-current-screen-face ((t :background ,bg       :foreground "#41c0ff" :weight bold)))
-   `(elscreen-tab-other-screen-face   ((t :inherit (elscreen-tab-background-face) :foreground "gray50" :height 0.6667)))
+   `(elscreen-tab-background-face     ((((class color) (min-colors 257)) :background "#404040" :foreground "#686868" :underline nil :height 1.3)
+                                       (t                                :background "#444444" :foreground "#6c6c6c" :underline nil :height 1.3)))
+   `(elscreen-tab-control-face        ((t :background "#ffffff" :foreground ,fg :underline nil)))
+   `(elscreen-tab-current-screen-face ((t :background "gray35"  :foreground "#41c0ff" :weight bold :underline nil)))
+   `(elscreen-tab-other-screen-face   ((((class color) (min-colors 257)) :inherit (elscreen-tab-background-face) :foreground "gray50" :height 0.77)
+                                       (t                                :inherit (elscreen-tab-background-face) :foreground "gray51" :height 0.77)))
    ;; Shell
    `(comint-highlight-prompt ((t :foreground ,bg-red   :weight bold)))
    `(comint-highlight-input  ((t :foreground "#ffffff" :weight bold)))
