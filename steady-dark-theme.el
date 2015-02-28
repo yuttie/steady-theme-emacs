@@ -29,7 +29,7 @@
   "A steady dark theme for Emacs")
 
 (let ((bg  "#272727")
-      (fg  "#d0d0d0")
+      (fg  "#c0c0c0")
       (shadow    "gray40")
       (fg-red    "#ed5c5c") (fg-red-256    "#ff5f5f")  (bg-red    "#ff9594") (bg-red-256    "#ff8787")
       (fg-yellow "#e2a206") (fg-yellow-256 "#dfaf00")  (bg-yellow "#f5df60") (bg-yellow-256 "#ffdf5f")
