@@ -1,6 +1,6 @@
 ;;; steady-dark-theme.el --- A steady dark theme for Emacs  -*- lexical-binding: t -*-
 
-;; Copyright (C) 2013  Yuta Taniguchi
+;; Copyright (C) 2014  Yuta Taniguchi
 
 ;; Author: Yuta Taniguchi <yuta.taniguchi.y.t@gmail.com>
 ;; Keywords: theme
