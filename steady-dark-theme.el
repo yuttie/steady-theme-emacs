@@ -133,7 +133,7 @@
    `(company-tooltip-mouse            ((t :inherit (company-tooltip-selection))))
    `(company-tooltip-common           ((t :inherit (company-tooltip) :foreground ,yellow-medium :weight bold)))
    `(company-tooltip-common-selection ((t :inherit (company-tooltip-selection) :foreground ,yellow-medium)))
-   `(company-tooltip-annotation       ((t :inherit (company-tooltip) :foreground "gray50")))
+   `(company-tooltip-annotation       ((t :inherit (company-tooltip) :foreground "#c83737")))
    `(company-scrollbar-fg             ((t :background "gray40")))
    `(company-scrollbar-bg             ((t :inherit (company-tooltip) :foreground "gray50")))
    `(company-preview                  ((t :foreground "#ffffff")))
