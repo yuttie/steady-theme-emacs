@@ -214,6 +214,7 @@
 
 ;; Local Variables:
 ;; eval: (add-to-list 'custom-theme-load-path (file-name-directory (buffer-file-name)))
+;; eval: (rainbow-mode)
 ;; End:
 
 ;;; steady-dark-theme.el ends here
